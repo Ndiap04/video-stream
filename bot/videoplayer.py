@@ -140,7 +140,7 @@ async def startvideo(client, m: Message):
                     stream_type=StreamType().local_stream,
                 )
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0faaa780ae861fb780814.png",
+                    photo="https://telegra.ph/file/2c9c18ae26a9a2728941f.jpg",
                     reply_markup=keyboard,
                     caption=f"▶️ **video streaming started!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{convert_seconds(duration)} m`\n\n» **join to video chat on the top to watch the video.**")
                 return await msg.delete()
@@ -179,7 +179,7 @@ async def startvideo(client, m: Message):
                 stream_type=StreamType().local_stream,
             )
             await m.reply_photo(
-                photo="https://telegra.ph/file/bca4f149e798092846230.png",
+                photo="https://telegra.ph/file/2c9c18ae26a9a2728941f.jpg",
                 reply_markup=keyboard,
                 caption=f"▶️ **video streaming started !**\n\n» **join to video chat on the top to watch the video.**")
             return await msg.delete()
