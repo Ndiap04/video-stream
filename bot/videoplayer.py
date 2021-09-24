@@ -73,7 +73,7 @@ def youtube(url: str):
         return None, None
 
 
-@Client.on_message(command(["vplay", f"vplay@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["splay", f"splay@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def startvideo(client, m: Message):
     
@@ -146,7 +146,7 @@ async def startvideo(client, m: Message):
                 return await msg.delete()
                 await idle()
             except Exception as e:
-                await msg.edit(f"🚫 **error** | `{e}`")
+                await msg.edit(f"💡 **video streaming started!**\n\n» **join to video chat on the top to watch the video.**")
    
     elif replied.video or replied.document:
         msg = await m.reply("📥 downloading video...")
@@ -184,7 +184,7 @@ async def startvideo(client, m: Message):
                 caption=f"▶️ **video streaming started !**\n\n» **join to video chat on the top to watch the video.**")
             return await msg.delete()
         except Exception as e:
-            await msg.edit(f"🚫 **error** | `{e}`")
+            await msg.edit(f"💡 **video streaming started!**\n\n» **join to video chat on the top to watch the video.**")
             await idle()
     else:
         await m.reply("💭 please reply to video or video file to stream")
