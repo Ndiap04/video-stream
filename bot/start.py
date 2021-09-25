@@ -51,7 +51,7 @@ async def start(_, m: Message):
                         "📚 All Command List", callback_data="cblist")
                 ], [
                     InlineKeyboardButton(
-                        "🚨 Channel Support", url=f"https://t.me/SpinningEart")
+                        "🚨 Channel Support", url="https://t.me/SpinningEart")
                 ]]
             ))
     else:
