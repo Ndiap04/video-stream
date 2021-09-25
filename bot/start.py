@@ -59,7 +59,7 @@ async def start(_, m: Message):
                            reply_markup=InlineKeyboardMarkup(
                                [[
                                    InlineKeyboardButton(
-                                       "📚 Command List", callback_data="cblist"")
+                                       "📚 Command List", callback_data="cblist")
                                ], [
                                    InlineKeyboardButton(
                                        "🌐 Search Youtube", switch_inline_query='')
