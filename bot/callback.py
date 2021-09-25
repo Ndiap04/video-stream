@@ -77,7 +77,7 @@ async def cblist(_, query: CallbackQuery):
 
 » /rmd - remove all downloaded files.
 » /rmw - remove all downloaded raw files.
-» /leaveall - order assistant leave from all group.
+» /userbotleaveall - order assistant leave from all group.
 » /sysinfo - check bot system information.
 
 🚨 Maintained by @SpinningEart 🚨""",
