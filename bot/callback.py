@@ -5,13 +5,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 
 from config import Veez
 
-@Client.on_callback_query(filters.regex("cbenglish"))
+@Client.on_callback_query(filters.regex("cbguide"))
 async def cbguide(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""❓ **HOW TO USE THIS BOT**:
 1.)First, add me to your group. 
 2.) Then promote me as admin and grant all permission except anonymous admin. 
-3.) Add @{Veez.ASSISTANT_NAME} to your group. 
+3.) Add @SpinningEarth2_Assistant to your group. 
 4.) Turn on voice chat first before starting video streaming. 
 5.) Type /splay (Reply to video) / (Using youtube link) to start streaming. 
 6.) Type /vstop to end the video stream. 
@@ -27,33 +27,7 @@ async def cbguide(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
-                    "🇮🇩 Indonesia", callback_data="cbindo")
-            ]]
-        ))
-
-@Client.on_callback_query(filters.regex("cbindo"))
-async def cbguide(_, query: CallbackQuery):
-    await query.edit_message_text(
-        f"""❓ **CARA MENGGUNAKAN BOT INI**:
-1.) Pertama, tambahkan saya ke grup Anda.
-2.) Kemudian promosikan saya sebagai admin dan berikan semua izin kecuali admin anonim.
-3.) Tambahkan @{Veez.ASSISTANT_NAME} ke grup Anda.
-4.) Nyalakan obrolan suara terlebih dahulu sebelum mulai streaming video.
-5.) Jenis / splay (Balas ke video) / (Memakai link youtube)  untuk mulai streaming.
-6.) Jenis / vstop untuk mengakhiri streaming video.
-
-× Catatan ×
-
-- Stream & Stop Command hanya dapat dieksekusi oleh admin grup saja!
-- Durasi hanya sampai 120 menit saja, semakin banyak durasi yang kalian play akan semakin patah patah suara dan video nya. 
-- Gunakan durasi pendek agar suara tidak patah patah dan enak untuk di dengar.
-- Bot tidak bisa melakukan permintaan video, tunggu video selesai dan turunkan assistant lalu play lagi menggunakan link youtube atau balas video.
-
-🚨 Maintained by @SpinningEart 🚨""",
-        reply_markup=InlineKeyboardMarkup(
-            [[
-                InlineKeyboardButton(
-                    "❌ Close", callback_data="cbls")
+                    "❌ Close", callback_data="cls")
             ]]
         ))
 
