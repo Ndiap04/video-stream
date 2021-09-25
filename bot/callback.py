@@ -70,8 +70,6 @@ async def cblist(_, query: CallbackQuery):
 🔰 EXTRA CMD:
 
 » /tts (reply to text) - text to speak.
-» /ping - check bot ping status.
-» /uptime - check bot uptime status.
 
 💡 SUDO ONLY:
 
