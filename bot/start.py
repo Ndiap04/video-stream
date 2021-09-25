@@ -51,7 +51,7 @@ async def start(_, m: Message):
                         "📚 All Command List", callback_data="cblist")
                 ], [
                     InlineKeyboardButton(
-                        "🚨 Channel Support", url=f"https://telegra.ph/%CF%9A%D6%84%C3%AC%D5%B2%D5%B2%C3%AC%D5%B2%D6%81--%C6%90%C4%85%C9%BE%D5%A7%D5%B0-1-09-16")
+                        "🚨 Channel Support", url=f"https://t.me/SpinningEart")
                 ]]
             ))
     else:
