@@ -11,7 +11,7 @@ async def cbguide(_, query: CallbackQuery):
         f"""❓ **HOW TO USE THIS BOT**:
 1.)First, add me to your group. 
 2.) Then promote me as admin and grant all permission except anonymous admin. 
-3.) Add @SpinningEarth2_Assistant to your group. 
+3.) Add @SpinningEarth2_Assistant to your group or you can use /joinuserbot. 
 4.) Turn on voice chat first before starting video streaming. 
 5.) Type /splay (Reply to video) / (Using youtube link) to start streaming. 
 6.) Type /vstop to end the video stream. 
@@ -19,7 +19,7 @@ async def cbguide(_, query: CallbackQuery):
 × **Note** × 
 
 - Stream & Stop Command can only be executed by group admin only! 
-- The duration is only up to 120 minutes, the more duration you play, the more broken the sound and video will be. 
+- The duration is only up to 60 minutes, the more duration you play, the more broken the sound and video will be. 
 - Use a short duration so that the sound does not break and is pleasant to hear. 
 - Bots cannot make video requests, wait for the video to finish and lower the assistant then play again using the youtube link or reply to the video.
 
